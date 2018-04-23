@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+body{
+  background-color: lightgoldenrodyellow;
+}
+
+table {
+   table-layout: fixed;
+   border: 1px solid;
+   margin-left: 10px;
+}
+
+.film-name {
+  width: 275px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.film-tagline {
+  width: 250px;
+  padding: 10px;
+}
+
+.film-showtimes {
+  width: 100px;
+  padding: 10px;
+}
