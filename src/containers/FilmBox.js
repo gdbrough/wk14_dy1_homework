@@ -1,8 +1,9 @@
-import React, {Component} from "react";
+import React, {Component} from "react"; // import React from "react";
 import FilmList from "../components/FilmList";
+import Footer from "../components/Footer";
 import "../App.css";
 
-class FilmBox extends Component{
+class FilmBox extends Component{  // class FilmBox extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -18,10 +19,16 @@ class FilmBox extends Component{
   }
   render(){
     return(
-      <div className="film-box">
+      // <div className="film-box">
+      //   <h2>UK Opening this week</h2>
+      //   <FilmList data={this.state.data} />
+      // </div>
+      //
+      <React.Fragment>
         <h2>UK Opening this week</h2>
         <FilmList data={this.state.data} />
-      </div>
+        <Footer />
+      </React.Fragment>
     );
   }
 }

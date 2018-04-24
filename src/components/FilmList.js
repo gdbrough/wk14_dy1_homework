@@ -4,7 +4,7 @@ import "../App.css";
 
 class FilmList extends Component{
   render(){
-    const filmNodes = this.props.data.map(film => {
+    const filmList = this.props.data.map(film => {
       return(
         <Film filmName={film.filmName} key={film.id} tagLine={film.tagLine}>
           {/* {film.showtimes} */}
@@ -13,7 +13,7 @@ class FilmList extends Component{
       );
     });
     return <table className="filmList"><tbody>
-      {filmNodes}
+      {filmList}
     </tbody></table>;
   }
 }
